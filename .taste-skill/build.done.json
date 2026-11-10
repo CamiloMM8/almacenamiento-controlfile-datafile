@@ -1,0 +1,11 @@
+{
+ "page": "index.html",
+ "url": null,
+ "root": null,
+ "kind": "software",
+ "category": "control file y data file de Oracle 19c",
+ "primary": "Ver el mapa de archivos",
+ "rounds": 3,
+ "start": "2026-11-10T02:06:01.516Z",
+ "by": "gate.mjs --start"
+}

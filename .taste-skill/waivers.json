@@ -1,0 +1,22 @@
+[
+  {
+    "check": "section-gaps",
+    "target": "section#mapa / section#frase",
+    "reason": "La escena sorteada es una sola frase centrada en su pantalla fija; el aire de encima es media pantalla de esa escena."
+  },
+  {
+    "check": "section-gaps",
+    "target": "section#frase / section#registros",
+    "reason": "La escena sorteada es una sola frase centrada en su pantalla fija; el aire de debajo es media pantalla de esa escena."
+  },
+  {
+    "check": "section-gaps",
+    "target": "section#dudas / section#anatomia",
+    "reason": "248px es el hueco normal de la página; la mediana de 679px solo sube por los dos huecos de la escena de la frase."
+  },
+  {
+    "check": "section-gaps",
+    "target": "section#dudas / section#anatomia",
+    "reason": "248px es el hueco normal de la página; la mediana de 679px solo sube por los dos huecos de la escena de la frase."
+  }
+]

@@ -1,0 +1,429 @@
+{
+ "start": "2026-11-10T02:06:01.516Z",
+ "round": 2,
+ "idle": 0,
+ "errors": 0,
+ "status": "pass",
+ "history": [
+  {
+   "at": "2026-11-10T03:11:44.676Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 3,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-10T03:15:20.704Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 1,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-10T03:19:42.700Z",
+   "mode": "manual",
+   "status": "pass",
+   "fails": 0,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "software",
+  "category": "control file y data file de Oracle 19c",
+  "primary": "Ver el mapa de archivos",
+  "rounds": 3,
+  "start": "2026-11-10T02:06:01.516Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "59ccc1ef66881220:8e6a0029",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "6013218f1cbe3bd3",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "section-gaps",
+    "where": "section#frase / section#registros",
+    "msg": "884px between these sections (never on one screen), +375% against the median 186px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#frase / section#registros"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "nav",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.nav__logo \"A Archivos\"",
+    "msg": "the nav is lopsided: its first item starts 7px inside the content's edge (80px), while its last ends on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.ui-win__main > ul.ui-win__rows > li.ui-win__row:nth-of-type(1) > span.ui-win__sub \"/u02/oradata/ORCL/control01.ctl\"",
+    "msg": "shortened with an ellipsis (and 7 more like it: \"/u03/oradata/ORCL/contro\", \"/u04/oradata/ORCL/contro\", \"CONTROL_FILES, las tres \", \"BACKUP CONTROLFILE TO\", ...)",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#arranque \"Arranque del control file NOMOUNT sin co\"",
+    "msg": "starts \"border-left-color\" (0.3 s) the moment it is scrolled into view (an IntersectionObserver) on li.mo-pc__step:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "section#arranque > div.wrap.mo-pc__grid \"Arranque del control file NOMOUNT sin co\"",
+    "msg": "held on screen for 1 screen of scroll (position: sticky) while the page moves on (inside a dealt moment's section, [data-moment]: expected on every kind, two moments at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#copias \"Copias del control file\"",
+    "msg": "pictures, effects and mocks cover 19% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "ui-centre",
+    "where": "div.wrap.mo-pc__grid > div.mo-pc__visuals.frame > figure.mo-pc__visual:nth-of-type(1) > div.ui.ui-panel \"SQL nomount.sql 1 STARTUP NOMOUNT; ORACL\"",
+    "msg": "a fragment meant for the middle sits off the middle of its panel: 1px of ground at the left, 187px at the right (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "centre the fragment (equal side gaps), or anchor it at a corner and cut it by the panel's edge",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "dark-ground",
+    "where": "section#arranque > div.wrap.mo-pc__grid > div.mo-pc__visuals.frame",
+    "msg": "the ground behind the UI is nearly as light as the UI on it (white on near-white) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "light the ground behind the UI (a daylight data-fx-palette): at least 3:1 against the card",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-styles",
+    "where": "button#tab-add \"Añadir\"",
+    "msg": "the selected tab \"Añadir\" is drawn as a filled soft in #26251e (its sliding indicator), a fill none of the page's buttons use (#2456d6): it reads as one more button style",
+    "fix": "draw the selected tab as a line under its word, or in the primary button's fill",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#registros \"Qué guarda el control file\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#arranque \"Arranque del control file\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"Ver el mapa de archivos\"",
+    "msg": "\"Ver el mapa de archivos\" does not start with a verb (book, buy, try, start, get, see...)",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.ui-win__main > ul.ui-win__rows > li.ui-win__row:nth-of-type(2) > span.ui-win__age \"u03\"",
+    "msg": "28 lines of text in drawn mocks read under 4.5:1 (3 colour pairs), the worst \"u03\" in #73716a on #d7d6d2 at 3.36:1",
+    "fix": "lift the mocks' muted text (labels, meta, initials) to 4.5:1 on their own panel, or set it larger",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "busy-ground",
+    "where": "section#dudas > div.wrap.grid > div.section-head.span-5 > p \"No cubre el redo log ni una recuperación\"",
+    "msg": "text over a detailed part of a picture (its ground changes by 1.5 L* from one pixel to the next under the words) (and 8 more like it: \"¿Monta si falta un contr\", \"No. Oracle exige cada ru\", \"¿Un data file cabe en do\", \"No. Un data file pertene\", ...)",
+    "fix": "move the text to a calm part of the picture, or put it on a panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#mapa / section#frase",
+    "msg": "138px between these sections (never on one screen), -26% against the median 186px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#dudas / section#anatomia",
+    "msg": "432px between these sections, +36% against the median 317px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#copias / section#contraste",
+    "msg": "267px between these sections, +44% against the median 186px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#arranque / section#dudas",
+    "msg": "uneven space at the edge of a band: 179px outside its edge, 114px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#dudas \"Dudas del data file\"",
+    "msg": "1 section over 90 words a screen outside the UI mocks (\"Dudas del data file\" 110); 47 words a screen across the page (659 words in 14 screens): a tech page says it in about 80 or fewer",
+    "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav.nav--centre",
+    "msg": "the nav stays on screen with 5 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"ver el mapa de archivos\"",
+    "msg": "\"ver el mapa de archivos\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "section#dudas \"Dudas del data file No cubre el redo log\"",
+    "msg": "the content fills 51.9% of the section's height (468 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "h2#frase-h \"Lista cada data file.\"",
+    "msg": "1 text block starts on a left line at x 160, 80px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "div.wrap.mo-pc__grid > div.mo-pc__text > ol.mo-pc__steps > li.mo-pc__step:nth-of-type(1) \"NOMOUNT sin control file La instancia su\"",
+    "msg": "3 text blocks start on a left line at x 106, 26px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"MOUNT del control file ALTER DAT\", \"OPEN de los data files ALTER DAT\") (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.ui-win__main > ul.ui-win__rows > li.ui-win__row:nth-of-type(2) > span.ui-win__sub \"/u03/oradata/ORCL/control02.ctl\"",
+    "msg": "shortened with an ellipsis (and 1 more like it: \"SELECT name, status FROM\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.ui.ui-panel > ul.ui-checks__list > li.ui-check:nth-of-type(3) > span.ui-check__label \"CREATED\"",
+    "msg": "cut 5px at the bottom by the overflow of div.group > div.grid > article.card.card--row:nth-of-type(1) > div.panel: a fragment run out through its panel's edge",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "section#frase > div.wrap.sc__stage \"Lista cada data file.\"",
+    "msg": "held on screen for 1 screen of scroll (position: sticky) while the page moves on (a big scene on a software page: allowed, one scene at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#contraste \"Contraste del control file\"",
+    "msg": "pictures, effects and mocks cover 22% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#frase \"Lista cada data file.\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.ui-win__main > ul.ui-win__rows > li.ui-win__row:nth-of-type(3) > span.ui-win__st \"Acorde\"",
+    "msg": "14 lines of text in drawn mocks read under 4.5:1 (3 colour pairs), the worst \"Acorde\" in #787770 on #d3d2ce at 2.97:1",
+    "fix": "lift the mocks' muted text (labels, meta, initials) to 4.5:1 on their own panel, or set it larger",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "busy-ground",
+    "where": "h2#dudas-h \"Dudas del data file\"",
+    "msg": "text over a detailed part of a picture (its ground changes by 1.5 L* from one pixel to the next under the words) (and 9 more like it: \"No cubre el redo log ni \", \"¿Monta si falta un contr\", \"No. Oracle exige cada ru\", \"¿Un data file cabe en do\", ...)",
+    "fix": "move the text to a calm part of the picture, or put it on a panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fade-cut",
+    "where": "div.ui-win__main > ul.ui-win__rows > li.ui-win__row:nth-of-type(4) > span.ui-win__who \"SPFILE\"",
+    "msg": "2 lines of div.ui.ui-panel fade out under its edge (\"SPFILE\", \"control.bkp\"): drawn at a fraction of #26251e on #dfdedb, half-erased",
+    "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#frase \"Lista cada data file.\"",
+    "msg": "48% of the section is empty: 816px above its first content, in its 1688px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 165,
+   "layout": 6
+  }
+ },
+ "open": [],
+ "waived": [
+  {
+   "check": "section-gaps",
+   "where": "section#frase / section#registros",
+   "msg": "884px between these sections (never on one screen), +375% against the median 186px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#frase / section#registros"
+   ],
+   "reason": "La escena sorteada es una sola frase en su pantalla. El escenario del kit deja la línea arriba, así que el hueco de abajo es el resto de esa pantalla."
+  }
+ ],
+ "warnCount": 32,
+ "at": "2026-11-10T03:19:42.701Z"
+}

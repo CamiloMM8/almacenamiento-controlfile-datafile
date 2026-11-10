@@ -1,0 +1,494 @@
+{
+ "url": "http://127.0.0.1:5300/index.html",
+ "views": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "navH": 72,
+   "scrollHeight": 13500,
+   "screens": 15,
+   "sections": [
+    {
+     "n": 1,
+     "tag": "section",
+     "id": "",
+     "cls": "hero hero--split is-still is-entered",
+     "top": 0,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-01-a.jpg",
+       "scrollY": 0
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "tag": "section",
+     "id": "ventana",
+     "cls": "section",
+     "top": 900,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-02-a.jpg",
+       "scrollY": 900
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "tag": "section",
+     "id": "mapa",
+     "cls": "section bg-mist",
+     "top": 1800,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-03-a.jpg",
+       "scrollY": 1800
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "tag": "section",
+     "id": "frase",
+     "cls": "sc is-live",
+     "top": 2700,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-04-a.jpg",
+       "scrollY": 2700
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "tag": "section",
+     "id": "registros",
+     "cls": "section g2 ground-surface",
+     "top": 3600,
+     "h": 1800,
+     "hScreens": 2,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-05-a.jpg",
+       "scrollY": 3600
+      },
+      {
+       "file": "desktop-sec-05-b.jpg",
+       "scrollY": 4500
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "tag": "section",
+     "id": "arranque",
+     "cls": "section is-live",
+     "top": 5400,
+     "h": 1800,
+     "hScreens": 2,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-06-a.jpg",
+       "scrollY": 5400
+      },
+      {
+       "file": "desktop-sec-06-b.jpg",
+       "scrollY": 6300
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "tag": "section",
+     "id": "dudas",
+     "cls": "section bg-band",
+     "top": 7200,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-07-a.jpg",
+       "scrollY": 7200
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "tag": "section",
+     "id": "anatomia",
+     "cls": "section",
+     "top": 8100,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-08-a.jpg",
+       "scrollY": 8100
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "tag": "section",
+     "id": "operaciones",
+     "cls": "section",
+     "top": 9000,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-09-a.jpg",
+       "scrollY": 9000
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "tag": "section",
+     "id": "cabecera",
+     "cls": "section",
+     "top": 9900,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-10-a.jpg",
+       "scrollY": 9900
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "tag": "section",
+     "id": "copias",
+     "cls": "section",
+     "top": 10800,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-11-a.jpg",
+       "scrollY": 10800
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "tag": "section",
+     "id": "contraste",
+     "cls": "section",
+     "top": 11700,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-12-a.jpg",
+       "scrollY": 11700
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "tag": "footer",
+     "id": "contact",
+     "cls": "footer closing",
+     "top": 12600,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-13-a.jpg",
+       "scrollY": 12600
+      }
+     ]
+    }
+   ],
+   "consoleErrors": []
+  },
+  "mobile": {
+   "width": 390,
+   "height": 844,
+   "navH": 56,
+   "scrollHeight": 14803,
+   "screens": 17.54,
+   "sections": [
+    {
+     "n": 1,
+     "tag": "section",
+     "id": "",
+     "cls": "hero hero--split is-still is-entered",
+     "top": 0,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-01-a.jpg",
+       "scrollY": 0
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "tag": "section",
+     "id": "ventana",
+     "cls": "section",
+     "top": 844,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-02-a.jpg",
+       "scrollY": 844
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "tag": "section",
+     "id": "mapa",
+     "cls": "section bg-mist",
+     "top": 1688,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-03-a.jpg",
+       "scrollY": 1688
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "tag": "section",
+     "id": "frase",
+     "cls": "sc is-live",
+     "top": 2532,
+     "h": 1688,
+     "hScreens": 2,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-04-a.jpg",
+       "scrollY": 2532
+      },
+      {
+       "file": "mobile-sec-04-b.jpg",
+       "scrollY": 3376
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "tag": "section",
+     "id": "registros",
+     "cls": "section g2 ground-surface",
+     "top": 4220,
+     "h": 2111,
+     "hScreens": 2.5,
+     "offGrid": 423,
+     "tiles": [
+      {
+       "file": "mobile-sec-05-a.jpg",
+       "scrollY": 4220
+      },
+      {
+       "file": "mobile-sec-05-b.jpg",
+       "scrollY": 5064
+      },
+      {
+       "file": "mobile-sec-05-c.jpg",
+       "scrollY": 5487
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "tag": "section",
+     "id": "arranque",
+     "cls": "section",
+     "top": 6331,
+     "h": 1786,
+     "hScreens": 2.12,
+     "offGrid": 98,
+     "tiles": [
+      {
+       "file": "mobile-sec-06-a.jpg",
+       "scrollY": 6331
+      },
+      {
+       "file": "mobile-sec-06-b.jpg",
+       "scrollY": 7175
+      },
+      {
+       "file": "mobile-sec-06-c.jpg",
+       "scrollY": 7273
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "tag": "section",
+     "id": "dudas",
+     "cls": "section bg-band",
+     "top": 8117,
+     "h": 873,
+     "hScreens": 1.03,
+     "offGrid": 29,
+     "tiles": [
+      {
+       "file": "mobile-sec-07-a.jpg",
+       "scrollY": 8117
+      },
+      {
+       "file": "mobile-sec-07-b.jpg",
+       "scrollY": 8146
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "tag": "section",
+     "id": "anatomia",
+     "cls": "section",
+     "top": 8990,
+     "h": 962,
+     "hScreens": 1.14,
+     "offGrid": 118,
+     "tiles": [
+      {
+       "file": "mobile-sec-08-a.jpg",
+       "scrollY": 8990
+      },
+      {
+       "file": "mobile-sec-08-b.jpg",
+       "scrollY": 9108
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "tag": "section",
+     "id": "operaciones",
+     "cls": "section",
+     "top": 9952,
+     "h": 988,
+     "hScreens": 1.17,
+     "offGrid": 144,
+     "tiles": [
+      {
+       "file": "mobile-sec-09-a.jpg",
+       "scrollY": 9952
+      },
+      {
+       "file": "mobile-sec-09-b.jpg",
+       "scrollY": 10096
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "tag": "section",
+     "id": "cabecera",
+     "cls": "section",
+     "top": 10940,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-10-a.jpg",
+       "scrollY": 10940
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "tag": "section",
+     "id": "copias",
+     "cls": "section",
+     "top": 11784,
+     "h": 951,
+     "hScreens": 1.13,
+     "offGrid": 107,
+     "tiles": [
+      {
+       "file": "mobile-sec-11-a.jpg",
+       "scrollY": 11784
+      },
+      {
+       "file": "mobile-sec-11-b.jpg",
+       "scrollY": 11891
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "tag": "section",
+     "id": "contraste",
+     "cls": "section",
+     "top": 12735,
+     "h": 1131,
+     "hScreens": 1.34,
+     "offGrid": 287,
+     "tiles": [
+      {
+       "file": "mobile-sec-12-a.jpg",
+       "scrollY": 12735
+      },
+      {
+       "file": "mobile-sec-12-b.jpg",
+       "scrollY": 13022
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "tag": "footer",
+     "id": "contact",
+     "cls": "footer closing",
+     "top": 13866,
+     "h": 937,
+     "hScreens": 1.11,
+     "offGrid": 93,
+     "tiles": [
+      {
+       "file": "mobile-sec-13-a.jpg",
+       "scrollY": 13866
+      },
+      {
+       "file": "mobile-sec-13-b.jpg",
+       "scrollY": 13959
+      }
+     ]
+    }
+   ],
+   "consoleErrors": []
+  }
+ },
+ "at": "2026-11-10T03:38:22.896Z"
+}
